@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_manage_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    tools:context="com.sproutonecard.rechargeandreward.ui.activity.ManageProfileActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/manage_profile"
+                    android:textSize="30sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+               >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorGreenBacground"
+                    android:id="@+id/fullNameTextView_manageProfile"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_password"
+                    android:textSize="20sp"
+                    android:background="@drawable/rounded_corrner_button_green"
+                    android:textColor="@color/colorSplashBackground"
+                    android:textAllCaps="false"
+                    android:id="@+id/changePasswordButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:weightSum="10"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:weightSum="6"
+                android:layout_marginTop="10dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/group"
+                        android:textColor="@color/colorSplashBackground"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:id="@+id/groupTextView"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/groupTextView"
+                        android:textSize="15sp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorMainBackground"
+                        android:id="@+id/groupNameTextView"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorButtonGray"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/first_name"
+                        android:textColor="@color/colorSplashBackground"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:id="@+id/firstNameTextView"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/firstNameTextView"
+                        android:id="@+id/firstNameEditText"
+                        android:textSize="15sp"
+                        android:inputType="textPersonName"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/colorMainBackground"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorButtonGray"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/lastNameTextView"
+                        android:id="@+id/lastNameEditText"
+                        android:inputType="textPersonName"
+                        android:textSize="15sp"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/colorMainBackground"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/last_name"
+                        android:textColor="@color/colorSplashBackground"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:id="@+id/lastNameTextView"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorButtonGray"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/email"
+                        android:textColor="@color/colorSplashBackground"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+
+                        android:id="@+id/emailTextView"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/emailTextView"
+                        android:id="@+id/emailEditText_manageProfile"
+                        android:textSize="15sp"
+                        android:inputType="textEmailAddress"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/colorMainBackground"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorButtonGray"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/mobile"
+                        android:textColor="@color/colorSplashBackground"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:id="@+id/mobileTextView"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/mobileTextView"
+                        android:id="@+id/mobileEditText"
+                        android:textSize="15sp"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:textColor="@color/colorMainBackground"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorButtonGray"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/charity"
+                        android:textColor="@color/colorSplashBackground"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:id="@+id/charityTextView"/>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/charityTextView">
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:id="@+id/charitySpinner"/>
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/dropdown"
+                            android:layout_gravity="center_vertical|right"
+                            android:background="@color/colorWhite"
+                            />
+
+                    </FrameLayout>
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:text="@string/cancel"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/cancelButton_manageProfile"
+                    android:background="@drawable/rounded_cancel_button"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorSplashBackground"/>
+                <Button
+                    android:text="@string/submit"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/submitButton_manageProfile"
+                    android:background="@drawable/rounded_corrner_button_green"
+                    android:textColor="@color/colorSplashBackground"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:textAllCaps="false"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

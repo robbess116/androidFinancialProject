@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_redeem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    tools:context="com.sproutonecard.rechargeandreward.ui.activity.RedeemActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/redeem_points"
+                    android:textSize="30sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/available_points"
+                    android:textSize="25sp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="0"
+                    android:id="@+id/availablePoints_redeem"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorGreenBacground"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/oan"
+                    android:gravity="center"
+                    android:id="@+id/textView" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_edit_text"
+                    android:layout_marginLeft="20dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/spinnerOAN_redeem"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:drawSelectorOnTop="true"
+                        android:prompt="@string/oan_prompt"
+                        />
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/dropdown"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="20dp"/>
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/oan"
+                    android:textColor="@color/colorMainBackground"
+                    android:gravity="center"
+                    android:id="@+id/oanTextView"
+                    />
+
+                <FrameLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_edit_text"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/oanTextView"
+                    android:layout_centerVertical="true">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="@string/promo_code"
+                        android:inputType="text"
+                        android:textColorHint="@color/colorSplashBackground"
+                        android:textColor="@color/colorMainBackground"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/editTextPromoCode"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"/>
+
+
+                </FrameLayout>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="@string/claim"
+                    android:background="@drawable/rounded_corner_button_gray"
+                    android:id="@+id/promoRedeemButton"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:weightSum="10"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:weightSum="4"
+                android:paddingTop="20dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:text="Redeem 100 Points for $1"
+                        android:layout_width="0dp"
+                        android:layout_weight="9"
+                        android:layout_height="45dp"
+                        android:id="@+id/redeem1Button"
+                        android:background="@drawable/rounded_corrner_button_green"
+                        android:textColor="@color/colorSplashBackground"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="10">
+                    <Button
+                        android:text="Redeem 250 Points for $3"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:id="@+id/redeem3Button"
+                        android:layout_weight="9"
+                        android:background="@drawable/rounded_corrner_button_green"
+                        android:textColor="@color/colorSplashBackground"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="10">
+                    <Button
+                        android:text="Redeem 1000 Points for $10"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="9"
+                        android:id="@+id/redeem10Button"
+                        android:background="@drawable/rounded_corrner_button_green"
+                        android:textColor="@color/colorSplashBackground"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="10">
+                    <Button
+                        android:text="Redeem 5000 Points for $25"
+                        android:layout_width="0dp"
+                        android:layout_weight="9"
+                        android:layout_height="45dp"
+                        android:id="@+id/redeem25Button"
+                        android:background="@drawable/rounded_corrner_button_green"
+                        android:textColor="@color/colorSplashBackground"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="6"
+                android:gravity="center">
+
+                <Button
+                    android:text="@string/cancel"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/cancelButton_redeem"
+                    android:background="@drawable/rounded_cancel_button"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorSplashBackground"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

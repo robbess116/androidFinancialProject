@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_blackplus"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/transactionItemDetailImageView"/>
+        <TextView
+            android:id="@+id/transactionDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorMainBackground"
+            android:text="11/2/2016"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/transactionItemDetailImageView"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            />
+        <TextView
+            android:id="@+id/transactionTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorMainBackground"
+            android:text="Purchase"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/transactionDateTextView"
+            android:layout_toLeftOf="@+id/transactionAmount"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:lines="1"
+            />
+        <TextView
+            android:id="@+id/transactionAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorMainBackground"
+            android:text="$5.5"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorButtonGray"
+            android:layout_alignParentBottom="true"
+
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

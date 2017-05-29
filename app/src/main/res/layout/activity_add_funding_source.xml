@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_value"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    tools:context="com.sproutonecard.rechargeandreward.ui.activity.AddFundingSourceActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_funding_source"
+                    android:textSize="30sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="10"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nickname"
+                    android:maxLines="100"
+                    android:lines="2"
+                    android:id="@+id/nickNametextView"
+                    android:gravity="left|center"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/nickNametextView"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_corner_edit_text"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:hint="@string/american_express"
+                    android:textStyle="italic"
+                    android:textColor="@color/colorMainBackground"
+                    android:textColorHint="@color/colorSplashBackground"
+                    android:textSize="15sp"
+                    android:id="@+id/nickNameEditText"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:weightSum="10"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+
+                    >
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/card_number"
+                        android:textColor="@color/colorSplashBackground"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:id="@+id/cardNumberTextView"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/cardNumberTextView"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorMainBackground"
+                        android:id="@+id/cardNumberEditText"
+                        android:layout_toLeftOf="@+id/scanImageButton"
+                        android:layout_marginRight="10dp"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/scanImageButton"
+                        android:text="@string/scan"
+                        android:textAllCaps="false"
+                        android:background="@drawable/rounded_corner_button2_gray"
+                        android:textColor="@color/colorSplashBackground"
+                        android:drawableRight="@drawable/ic_cameraicon"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:gravity="left|center"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorButtonGray"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    >
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/card_type"
+                        android:textColor="@color/colorSplashBackground"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:id="@+id/firstNameTextView"/>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/firstNameTextView"
+                        android:id="@+id/cardTypeSpinner"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorButtonGray"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/lastNameTextView"
+                        android:id="@+id/cardExpiryEditText"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/colorMainBackground"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/mm_yy"
+                        android:textColor="@color/colorSplashBackground"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:id="@+id/lastNameTextView"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorButtonGray"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    >
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/cvv"
+                        android:textColor="@color/colorSplashBackground"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+
+                        android:id="@+id/emailTextView"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/emailTextView"
+                        android:id="@+id/cvvEditText"
+                        android:textSize="15sp"
+                        android:inputType="textEmailAddress"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/colorMainBackground"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorButtonGray"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    >
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/zip"
+                        android:textColor="@color/colorSplashBackground"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:id="@+id/mobileTextView"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/mobileTextView"
+                        android:id="@+id/zipEditText"
+                        android:textSize="15sp"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:textColor="@color/colorMainBackground"/>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:text="@string/cancel"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/cancelButton_addFundingSource"
+                    android:background="@drawable/rounded_cancel_button"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorSplashBackground"/>
+                <Button
+                    android:text="@string/submit"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/submitButton_addFundingSource"
+                    android:background="@drawable/rounded_corrner_button_green"
+                    android:textColor="@color/colorSplashBackground"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:textAllCaps="false"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

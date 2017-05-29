@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorMainBackground"
+    tools:context="com.sproutonecard.rechargeandreward.ui.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/logo"
+            android:id="@+id/imageViewLogo"
+            android:layout_weight="4"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="3">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_corner_edit_text"
+                android:id="@+id/emailEditTextFrameLayout">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:inputType="textEmailAddress"
+                    android:ems="12"
+                    android:hint="@string/email"
+                    android:textColorHint="@color/colorSplashBackground"
+                    android:textColor="@color/colorMainBackground"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/editTextEmail"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_corner_edit_text"
+                android:id="@+id/passwordEditTextFrameLayout">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:inputType="textPassword"
+                    android:ems="12"
+                    android:hint="@string/password"
+                    android:textColorHint="@color/colorSplashBackground"
+                    android:textColor="@color/colorMainBackground"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/editTextPassword"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"/>
+            </FrameLayout>
+            <Button
+                android:text="@string/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/forgotPasswordButton"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            >
+
+            <Button
+                android:text="@string/new_user"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:id="@+id/newUserButton"
+                android:background="@drawable/rounded_corner_button_gray"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+
+            <Button
+                android:text="@string/submit"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:id="@+id/submitButton"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_corrner_button_green"
+                android:textColor="@color/colorSplashBackground"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

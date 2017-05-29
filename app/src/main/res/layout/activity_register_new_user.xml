@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_new_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    tools:context="com.sproutonecard.rechargeandreward.ui.activity.RegisterNewUserActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_new_user"
+                    android:textSize="30sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cardflag"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/cardflagImageButton"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_no_pre_printed_card"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/cardflagImageButton"
+                    android:id="@+id/textView2" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/oan"
+                    android:textSize="15sp"/>
+
+                <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/colorMainBackground"
+                android:background="@drawable/rounded_corner_edit_text"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:id="@+id/oanNumberEditText"
+                android:hint="123456432345664"
+                android:textColorHint="@color/colorSplashBackground"
+                android:textSize="15sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/oan"
+                    android:textColor="@color/colorMainBackground"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="@string/oan_is_the_14digit"/>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:weightSum="10"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:weightSum="6"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorButtonGray"
+                        android:layout_alignParentBottom="true"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/_first_name"
+                        android:textColorHint="@color/colorSplashBackground"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorMainBackground"
+                        android:inputType="textPersonName"
+                        android:imeOptions="actionNext"
+                        android:id="@+id/firstNameEditText_register"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/_last_name"
+                        android:textColorHint="@color/colorSplashBackground"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorMainBackground"
+                        android:inputType="textPersonName"
+                        android:imeOptions="actionNext"
+                        android:id="@+id/lastNameEditText_register"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorButtonGray"
+                        android:layout_alignParentBottom="true"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/_email"
+                        android:textColorHint="@color/colorSplashBackground"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorMainBackground"
+                        android:inputType="textEmailAddress"
+                        android:imeOptions="actionNext"
+                        android:id="@+id/emailEditText_register"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorButtonGray"
+                        android:layout_alignParentBottom="true"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/_password"
+                        android:textColorHint="@color/colorSplashBackground"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorMainBackground"
+                        android:inputType="textPassword"
+                        android:imeOptions="actionNext"
+                        android:id="@+id/passwordEditText_register"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorButtonGray"
+                        android:layout_alignParentBottom="true"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/_confirm_password"
+                        android:textColorHint="@color/colorSplashBackground"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorMainBackground"
+                        android:inputType="textPassword"
+                        android:imeOptions="actionNext"
+                        android:id="@+id/confirmPasswordEditText_register"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorButtonGray"
+                        android:layout_alignParentBottom="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/_mobile"
+                        android:textColorHint="@color/colorSplashBackground"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorMainBackground"
+                        android:inputType="phone"
+                        android:imeOptions="actionDone"
+                        android:id="@+id/phoneNumberEditText_register"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorButtonGray"
+                        android:layout_alignParentBottom="true"
+                        />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                android:gravity="center">
+
+                <Button
+                    android:text="@string/cancel"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/cancelButton_register"
+                    android:background="@drawable/rounded_cancel_button"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorSplashBackground"/>
+                <Button
+                    android:text="@string/submit"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/submitButton_register"
+                    android:background="@drawable/rounded_corrner_button_green"
+                    android:textColor="@color/colorSplashBackground"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:textAllCaps="false"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

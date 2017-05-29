@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_add_value"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    tools:context="com.sproutonecard.rechargeandreward.ui.activity.AddValueActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_value"
+                    android:textSize="30sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:weightSum="10"
+                >
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/funding_source"
+                    android:maxLines="100"
+                    android:lines="2"
+
+                    android:gravity="left"
+                     />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_edit_text"
+                    android:layout_marginRight="10dp"
+                    >
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/spinnerOAN_addValue"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:drawSelectorOnTop="true"
+                        android:prompt="@string/oan_prompt"
+                        />
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/dropdown"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/colorWhite"/>
+
+
+
+                </FrameLayout>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addFundingSourceImgButton"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/ic_plus_account"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:weightSum="10"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:weightSum="5"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    android:paddingTop="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/ic_selectonetime"
+                            android:id="@+id/onTimeSelectedImageButton"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/one_time"
+                            android:textColor="@color/colorSplashBackground"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="10dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/amoout10"
+                            android:textColor="@color/colorSplashBackground"
+                            android:textSize="15sp"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/rounded_corner_gray_edti_text"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="10"
+                            android:inputType="number"
+                            android:textColor="@color/colorMainBackground"
+                            android:gravity="center_vertical|right"
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/oneTimeAmountEditText"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="3">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/ic_onetime"
+                            android:id="@+id/recurringSelectedImageButton"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recurring"
+                            android:textColor="@color/colorSplashBackground"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="10dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recurring_action"
+                            android:textColor="@color/colorSplashBackground"
+                            android:textSize="15sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/ic_addtopoff"
+                            android:id="@+id/recurringActionImageButton"
+                            />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/rounded_corner_gray_edti_text"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="10"
+                            android:inputType="number"
+                            android:textColor="@color/colorMainBackground"
+                            android:gravity="center_vertical|right"
+                            android:layout_marginLeft="40dp"
+                            android:id="@+id/recurringEditText"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/when_account_is_below"
+                            android:textColor="@color/colorSplashBackground"
+                            android:textSize="15sp"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/rounded_corner_gray_edti_text"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="2"
+                            android:inputType="number"
+                            android:textColor="@color/colorMainBackground"
+                            android:gravity="center_vertical|right"
+                            android:id="@+id/recurringBelowEditText"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:text="@string/cancel"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/cancelButton_addValue"
+                    android:background="@drawable/rounded_cancel_button"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorSplashBackground"/>
+                <Button
+                    android:text="@string/submit"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/submitButton_addValue"
+                    android:background="@drawable/rounded_corrner_button_green"
+                    android:textColor="@color/colorSplashBackground"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:textAllCaps="false"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+
+        <TextView
+            android:text="Purchase"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/textViewRefundedPuchaseItemName"
+            android:textColor="@color/colorMainBackground"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:text="$4.95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textViewRefundedPurchaseItemAmount"
+            android:textColor="@color/colorMainBackground"
+            android:textSize="15sp"/>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_onetime"
+            android:id="@+id/imageButtonRefundedItemSelected"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

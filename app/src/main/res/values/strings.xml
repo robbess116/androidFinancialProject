@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">RechargeAndReward</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="_email">*Email</string>
+    <string name="_password">*Password</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="new_user">New User</string>
+    <string name="submit">Submit</string>
+    <string name="logout">Logout</string>
+    <string name="manage">Manage</string>
+    <string name="oan">OAN</string>
+    <string name="available_balance">Available Balance:</string>
+    <string name="tap_on_card_to_pay">Tap on card to pay</string>
+    <string name="current_balance">Current Balance:</string>
+    <string name="available_points">Available Points:</string>
+    <string name="add_value">Add Value</string>
+    <string name="redeem">Redeem</string>
+    <string name="oan_prompt">Choose an oan</string>
+    <string name="manage_account">Manage Account</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="dispute_refund">Dispute refund</string>
+    <string name="cancel">Cancel</string>
+    <string name="request_refund">Request Refund</string>
+    <string name="reason_for_refund">Reason for refund</string>
+    <string name="redeem_points">Redeem Points</string>
+    <string name="claim">Claim</string>
+    <string name="promo_code">Promo Code</string>
+    <string name="funding_source">Funding Source</string>
+    <string name="one_time">One Time</string>
+    <string name="recurring">Recurring</string>
+    <string name="recurring_action">Recurring Action</string>
+    <string name="when_account_is_below">When account is below</string>
+    <string name="amoout10">Amount (Min $10)</string>
+    <string name="manage_profile">Manage Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="group">Group</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="_first_name">*First Name</string>
+    <string name="_last_name">*Last Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="_mobile">*Mobile</string>
+    <string name="charity">Charity</string>
+    <string name="add_funding_source">Add Funding Source</string>
+    <string name="nickname">Nickname (Max20)</string>
+    <string name="_nickname">*Nickname</string>
+    <string name="_oan">*OAN</string>
+    <string name="add_account">Add Account</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_type">Card Type</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="cvv">CVV</string>
+    <string name="zip">Zip</string>
+    <string name="american_express">John`s Debit Card</string>
+    <string name="scan">Scan</string>
+    <string name="register_new_user">Register New User</string>
+    <string name="i_no_pre_printed_card">I don`t have a pre-printed card</string>
+    <string name="oan_is_the_14digit">OAN is the 14 digit number on the back of pre-printed card</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="_confirm_password">*Confirm Password</string>
+    <string name="nickname_and_oan">Please enter your nickname and OAN!</string>
+    <string name="verify_user">Verify Register User</string>
+    <string name="please_enter_mobile_phone">Please enter mobile phone number and pin!</string>
+    <string name="mobile_phone_number">*Mobile Phone Number</string>
+    <string name="mobile_pin">*Mobile Pin</string>
+    <string name="old_password">*Old Password</string>
+    <string name="new_password">*New Password</string>
+    <string name="confirm_new_password">*Confirm New Password</string>
+    <string name="no_history">No transactions found for this month.</string>
+    <string name="no_oan">No OAN Card!</string>
+    <!--String Array-->
+    <string-array name="refund_reason_array">
+        <item>Product Not Delivered</item>
+        <item>Duplicate Charge</item>
+        <item>Unknown Transaction</item>
+        <item>Product Quality</item>
+        <item>Other</item>
+
+    </string-array>
+
+    <!--String Array-->
+    <string-array name="card_name_array">
+        <item>American Express</item>
+        <item>Discover</item>
+        <item>Mastercard</item>
+        <item>Visa</item>
+    </string-array>
+
+    <!--String Array-->
+    <string-array name="card_type_array">
+        <item>amex</item>
+        <item>discover</item>
+        <item>mc</item>
+        <item>visa</item>
+    </string-array>
+
+
+    <!--Error Message-->
+    <string name="error_field_required">This field is required</string>
+    <string name="correct_mail_required">Invalid mail format</string>
+    <string name="error_valid_email_required">Please enter a valid Email address.</string>
+    <string name="error_matched_password_required">Doesn\'t match password.</string>
+
+</resources>
